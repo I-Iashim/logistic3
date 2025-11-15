@@ -1,18 +1,14 @@
- * {
-   margin: 0;
-   padding: 0;
-   box-sizing: border-box;
-   font-family: sans-serif;
- }
-
+ 
+@import url('https://fonts.googleapis.com/css2?family=Vend+Sans:ital,wght@0,300..700;1,300..700&display=swap');
  html {
    scroll-behavior: smooth;
  }
-body::-webkit-scrollbar{
-  display: none;
-}
+
+ body::-webkit-scrollbar {
+   display: none;
+ }
+
  body {
-  
    font-family: "Poppins", sans-serif;
    background: #fff;
    color: #222;
@@ -72,7 +68,18 @@ body::-webkit-scrollbar{
    height: 100px;
    width: 150px;
  }
-
+.headLogoP{
+  position: relative;
+    top: -35px;
+    left: 15px;
+    font-size: 22px;
+    color: white;
+    letter-spacing: 4px;
+    font-family: "Vend Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
  .headerButtonContainer {
    display: flex;
    align-items: center;
@@ -599,11 +606,18 @@ body::-webkit-scrollbar{
  /* Mobile */
  @media (max-width: 480px) {
    .headerMainDiv {
-     height: 80px;
+     height: 100px;
    }
 
    .headLogo {
-     width: 130px;
+     width: 120px;
+     height: auto;
+
+   }
+   .headLogoP{
+    font-size: 18px;
+    top: -30px;
+    left: 8px;
    }
 
    .headerButtonContainer {
