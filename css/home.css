@@ -551,6 +551,131 @@
    font-size: 1.2rem;
  }
 
+
+
+
+
+ /* Floating Button */
+.slide-btn {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  background: black;
+  color: white;
+  border: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 8px 0 0 8px;
+  font-size: 20px;
+  cursor: pointer;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Slider that opens upward */
+.bottom-slider {
+  position: fixed;
+  top: calc(50% + 75px);
+  right: 0;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 0;
+  background: #25D366;
+  border-radius: 8px 0 0 8px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: height 0.3s ease;
+  z-index: 9998;
+}
+
+/* When slider is active */
+.bottom-slider.show {
+  height: 100px; /* slider height */
+}
+
+/* WhatsApp icon */
+.whatsapp-link i {
+  color: white;
+  font-size: 30px;
+}
+
+
+.slide-btn.rotate i {
+  transform: rotate(180deg);
+  transition: transform 0.3s ease;
+}
+/* Tooltip container */
+.slide-btn {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  background: black;
+  color: white;
+  border: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 8px 0 0 8px;
+  font-size: 20px;
+  cursor: pointer;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: visible; /* allow tooltip to show outside */
+}
+
+/* Tooltip text */
+.slide-btn .tooltip {
+  visibility: hidden;
+  opacity: 0;
+  width: max-content;
+  max-width: 180px;
+  background: #222; /* dark but modern */
+  color: #fff;
+  font-weight: 500;
+  font-size: 14px;
+  text-align: center;
+  padding: 8px 12px;
+  border-radius: 8px;
+  position: absolute;
+  right: 60px; /* distance from button */
+  top: 50%;
+  transform: translateY(-50%) translateX(10px); /* start slightly shifted */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  white-space: nowrap;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  z-index: 10000;
+  pointer-events: none;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Tooltip arrow */
+.slide-btn .tooltip::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: -10px;
+  transform: translateY(-50%);
+  border-width: 6px;
+  border-style: solid;
+  border-color: transparent transparent transparent #222; /* arrow pointing to button */
+}
+
+/* Show tooltip on hover */
+.slide-btn:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(-50%) translateX(0); /* slide in smoothly */
+}
+
+
+
  /* ======= RESPONSIVE DESIGN ======= */
 
  /* Tablets */
