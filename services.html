@@ -3,10 +3,11 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width, initial-scale=1.0">
+    <title>Services</title>
     <link rel="stylesheet" href="css/services.css">
     <link rel="stylesheet" href="css/home.css">
+  <link rel="shortcut icon" href="images/home/logo.png" type="image/x-icon">
 </head>
 
 
@@ -21,8 +22,7 @@
             <div class="marginDiv">
                 <div class="headerLinks">
                     <a href="https://wa.me/971504925316"><i class="fa-brands fa-whatsapp fa-lg"></i></a>
-                    <a href="https://facebook.com"><i class="fa-brands fa-facebook fa-lg"></i></a>
-                    <a href="https://instagram.com"><i class="fa-brands fa-instagram fa-lg"></i></a>
+                    <a href="https://www.instagram.com/hba_logistics?igsh=d3ZwczVxYjF3Y2Fk "><i class="fa-brands fa-instagram fa-lg"></i></a>
                     <a
                         href="https://www.linkedin.com/in/abdulhamid-kanaan-b341b6217?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app">
                         <i class="fa-brands fa-linkedin fa-lg"></i></a>
@@ -198,7 +198,7 @@
             </div>
         </section>
 
-        <section class="comprehensiveServicesSection comprehensiveServicesSection2" style="padding-left: 10px|;">
+        <section class="comprehensiveServicesSection comprehensiveServicesSection2" style="padding-left: 10px;">
 
 
             <div class="comprehensivePart1 RightSlideAnnimation">
@@ -254,11 +254,19 @@ support.</p>
         </section>
 
 
+<div class="bottom-slider" id="bottomSlider">
+  <a href="https://wa.me/971504925316" target="_blank" class="whatsapp-link">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+</div>
 
+<button class="slide-btn" id="slideBtn">
+  <i class="fa-solid fa-arrow-left"></i>
+  <span class="tooltip">Chat on WhatsApp</span>
+</button>
 
 
     </main>
-
 
 
 
@@ -271,8 +279,7 @@ support.</p>
                     <ul>
                         <li>
 
-                            <i class="fa-solid fa-circle-right fa-lg" style="color: #ff5722;"></i><a
-                                href="home.html">Home</a>
+                            <i class="fa-solid fa-circle-right fa-lg" style="color: #ff5722;"></i><a href="home.html">Home</a>
                         </li>
                         <li>
 
@@ -393,28 +400,32 @@ support.</p>
                     </ul>
                 </div>
                 <div class="footer-col social-col">
-                    <h4>Follow Us On</h4>
                     <div class="social-links">
-                        <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook fa-xl"></i></a>
                         <a href="https://www.linkedin.com/in/abdulhamid-kanaan-b341b6217?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
                             target="_blank"><i class="fa-brands fa-linkedin fa-xl "></i></a>
                         <a href="https://wa.me/971504925316" target="_blank"><i
                                 class="fa-brands fa-whatsapp fa-xl"></i></a>
-                        <a href="https://youtube.com" target="_blank"><i class="fa-brands fa-youtube fa-xl"></i></a>
-                        <a href="https://instagram.com "><i class="fa-brands fa-instagram fa-xl "></i></a>
+                        <a href="https://www.instagram.com/hba_logistics?igsh=d3ZwczVxYjF3Y2Fk "><i class="fa-brands fa-instagram fa-xl "></i></a>
                     </div>
                 </div>
             </div>
         </div>
     </footer>
 
-    <div class="footer-bottom">
-        <p>© 2025 Muhammad Hashim | All Rights Reserved</p>
-        <p>Made with ❤ by Muhammad Hashim</p>
-    </div>
 
 
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const slideBtn = document.getElementById("slideBtn");
+  const bottomSlider = document.getElementById("bottomSlider");
 
+  slideBtn.addEventListener("click", () => {
+    bottomSlider.classList.toggle("show");
+    slideBtn.classList.toggle("rotate"); // toggles arrow rotation
+
+  });
+});
+</script>
 
 
     <script>

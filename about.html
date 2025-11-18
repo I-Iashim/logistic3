@@ -4,9 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Document</title>
+    <title>About Us</title>
     <link rel="stylesheet" href="css/about.css">
     <link rel="stylesheet" href="css/home.css">
+  <link rel="shortcut icon" href="images/home/logo.png" type="image/x-icon">
 </head>
 
 <body>
@@ -16,8 +17,7 @@
             <div class="marginDiv">
                 <div class="headerLinks">
                     <a href="https://wa.me/971504925316"><i class="fa-brands fa-whatsapp fa-lg"></i></a>
-                    <a href="https://facebook.com"><i class="fa-brands fa-facebook fa-lg"></i></a>
-                    <a href="https://instagram.com"><i class="fa-brands fa-instagram fa-lg"></i></a>
+                   <a href="https://www.instagram.com/hba_logistics?igsh=d3ZwczVxYjF3Y2Fk "><i class="fa-brands fa-instagram fa-lg"></i></a>
                     <a
                         href="https://www.linkedin.com/in/abdulhamid-kanaan-b341b6217?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app">
                         <i class="fa-brands fa-linkedin fa-lg"></i></a>
@@ -154,8 +154,7 @@
                                 <h3>Basem kanaan</h3>
                                 <div class="underline"></div>
                                 <h5>Founder</h5>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, hic libero debitis
-                                    fugit et ab.</p>
+                                <p>The visionary founder who built our logistics legacy on trust, innovation, and world-class delivery.</p>
 
                             </div>
                         </div>
@@ -169,8 +168,7 @@
                                 <h3>Abdul Hameed Kanaan</h3>
                                 <div class="underline"></div>
                                 <h5>CEO</h5>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, hic libero debitis
-                                    fugit et ab.</p>
+                                <p>Transforming logistics with bold decisions, advanced solutions, and unwavering dedication.</p>
 
                             </div>
                         </div>
@@ -182,8 +180,7 @@
                                 <h3>Marwan Bashir</h3>
                                 <div class="underline"></div>
                                 <h5>Opacities Manager</h5>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, hic libero debitis
-                                    fugit et ab.</p>
+                                <p>Ensuring precision, clarity, and performance across every operational insight and decision.</p>
 
                             </div>
                         </div>
@@ -196,8 +193,7 @@
                                 <h3>Basheer Al Rafai</h3>
                                 <div class="underline"></div>
                                 <h5>Logistics Manager </h5>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, hic libero debitis
-                                    fugit et ab.</p>
+                                <p>Our Logistics Manager ensures every shipment reaches its destination safely, efficiently, and right on time.</p>
 
                             </div>
                         </div>
@@ -210,8 +206,7 @@
                                 <h3>Mohamad Al Khalid</h3>
                                 <div class="underline"></div>
                                 <h5>Logistics Expert</h5>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, hic libero debitis
-                                    fugit et ab.</p>
+                                <p>With deep industry insight, our Logistics Expert ensures every movement is optimized for speed, cost, and reliability.</p>
 
                             </div>
                         </div>
@@ -317,7 +312,16 @@
 
 
 
+<div class="bottom-slider" id="bottomSlider">
+  <a href="https://wa.me/971504925316" target="_blank" class="whatsapp-link">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+</div>
 
+<button class="slide-btn" id="slideBtn">
+  <i class="fa-solid fa-arrow-left"></i>
+  <span class="tooltip">Chat on WhatsApp</span>
+</button>
 
     </main>
 
@@ -450,25 +454,29 @@
                     </ul>
                 </div>
                 <div class="footer-col social-col">
-                    <h4>Follow Us On</h4>
                     <div class="social-links">
-                        <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook fa-xl"></i></a>
                         <a href="https://www.linkedin.com/in/abdulhamid-kanaan-b341b6217?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
                             target="_blank"><i class="fa-brands fa-linkedin fa-xl "></i></a>
                         <a href="https://wa.me/971504925316" target="_blank"><i
                                 class="fa-brands fa-whatsapp fa-xl"></i></a>
-                        <a href="https://youtube.com" target="_blank"><i class="fa-brands fa-youtube fa-xl"></i></a>
-                        <a href="https://instagram.com "><i class="fa-brands fa-instagram fa-xl "></i></a>
+                        <a href="https://www.instagram.com/hba_logistics?igsh=d3ZwczVxYjF3Y2Fk "><i class="fa-brands fa-instagram fa-xl "></i></a>
                     </div>
                 </div>
             </div>
         </div>
     </footer>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const slideBtn = document.getElementById("slideBtn");
+  const bottomSlider = document.getElementById("bottomSlider");
 
-    <div class="footer-bottom">
-        <p>© 2025 Muhammad Hashim | All Rights Reserved</p>
-        <p>Made with ❤ by Muhammad Hashim</p>
-    </div>
+  slideBtn.addEventListener("click", () => {
+    bottomSlider.classList.toggle("show");
+    slideBtn.classList.toggle("rotate"); // toggles arrow rotation
+
+  });
+});
+</script>
 
     <script>
         const cards = document.querySelectorAll('.mv-card');

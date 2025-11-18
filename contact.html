@@ -4,9 +4,10 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Industry Affiliation Slider</title>
+    <title>Contact Us</title>
     <link rel="stylesheet" href="css/home.css" />
     <link rel="stylesheet" href="css/contact.css">
+  <link rel="shortcut icon" href="images/home/logo.png" type="image/x-icon">
 </head>
 
 <body>
@@ -15,8 +16,7 @@
             <div class="marginDiv">
                 <div class="headerLinks">
                     <a href="https://wa.me/971504925316"><i class="fa-brands fa-whatsapp fa-lg"></i></a>
-                    <a href="https://facebook.com"><i class="fa-brands fa-facebook fa-lg"></i></a>
-                    <a href="https://instagram.com"><i class="fa-brands fa-instagram fa-lg"></i></a>
+                    <a href="https://www.instagram.com/hba_logistics?igsh=d3ZwczVxYjF3Y2Fk "><i class="fa-brands fa-instagram fa-lg"></i></a>
                     <a
                         href="https://www.linkedin.com/in/abdulhamid-kanaan-b341b6217?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app">
                         <i class="fa-brands fa-linkedin fa-lg"></i></a>
@@ -138,7 +138,7 @@
 
         <div class="contact-item">
           <i class="fa-solid fa-location-dot"></i>
-          <p>1202, Level 12, Fahidi Heights - AWR Properties, Dubai, United Arab Emirates</p>
+          <p>Ras Al Khour Industrial Área 2</p>
         </div>
 
 
@@ -163,6 +163,7 @@
         </div>
       </div>
     </section>
+
     <section class="contactLinksSection">
     <div class="contactLinksContainer">
         <div class="contactText">
@@ -170,14 +171,27 @@
         </div>
 
         <div class="contactIcons">
-            <div><a href=""><i class="fa-brands fa-facebook"></i></a></div>
-            <div><a href=""><i class="fa-brands fa-linkedin"></i></a></div>
-            <div><a href=""><i class="fa-brands fa-square-whatsapp"></i></a></div>
-            <div><a href=""><i class="fa-brands fa-square-instagram"></i></a></div>
+            <div><a href="https://www.linkedin.com/in/abdulhamid-kanaan-b341b6217?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"><i class="fa-brands fa-linkedin"></i></a></div>
+            <div><a href="https://wa.me/971504925316"><i class="fa-brands fa-square-whatsapp"></i></a></div>
+            <div><a href="https://www.instagram.com/hba_logistics?igsh=d3ZwczVxYjF3Y2Fk "><i class="fa-brands fa-square-instagram"></i></a></div>
             <div><a href=""><i class="fa-solid fa-envelope"></i></a></div>
         </div>
     </div>
 </section>
+
+
+<div class="bottom-slider" id="bottomSlider">
+  <a href="https://wa.me/971504925316" target="_blank" class="whatsapp-link">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+</div>
+
+<button class="slide-btn" id="slideBtn">
+  <i class="fa-solid fa-arrow-left"></i>
+  
+  <span class="tooltip">Chat on WhatsApp</span>
+</button>
+
 
     </main>
 
@@ -192,8 +206,7 @@
                     <ul>
                         <li>
 
-                            <i class="fa-solid fa-circle-right fa-lg" style="color: #ff5722;"></i><a
-                                href="home.html">Home</a>
+                            <i class="fa-solid fa-circle-right fa-lg" style="color: #ff5722;"></i><a href="home.html">Home</a>
                         </li>
                         <li>
 
@@ -314,26 +327,38 @@
                     </ul>
                 </div>
                 <div class="footer-col social-col">
-                    <h4>Follow Us On</h4>
                     <div class="social-links">
-                        <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook fa-xl"></i></a>
                         <a href="https://www.linkedin.com/in/abdulhamid-kanaan-b341b6217?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
                             target="_blank"><i class="fa-brands fa-linkedin fa-xl "></i></a>
                         <a href="https://wa.me/971504925316" target="_blank"><i
                                 class="fa-brands fa-whatsapp fa-xl"></i></a>
-                        <a href="https://youtube.com" target="_blank"><i class="fa-brands fa-youtube fa-xl"></i></a>
-                        <a href="https://instagram.com "><i class="fa-brands fa-instagram fa-xl "></i></a>
+                        <a href="https://www.instagram.com/hba_logistics?igsh=d3ZwczVxYjF3Y2Fk "><i class="fa-brands fa-instagram fa-xl "></i></a>
                     </div>
                 </div>
             </div>
         </div>
     </footer>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const slideBtn = document.getElementById("slideBtn");
+  const bottomSlider = document.getElementById("bottomSlider");
 
-    <div class="footer-bottom">
-        <p>© 2025 Muhammad Hashim | All Rights Reserved</p>
-        <p>Made with ❤ by Muhammad Hashim</p>
-    </div>
+  slideBtn.addEventListener("click", () => {
+    bottomSlider.classList.toggle("show");
+    slideBtn.classList.toggle("rotate"); // toggles arrow rotation
+
+  });
+});
+</script>
+
     <script>
+
+
+
+
+
+
+
         let menuList = document.getElementById("menuList")
         menuList.style.maxHeight = "0px";
 
